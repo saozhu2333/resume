@@ -5,15 +5,17 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      redirect: '/index'
+      redirect: '/ceshi'
     },
     {
       path: '/index',
       name: 'index',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('@/views/index.vue')
+    },
+    {
+      path: '/ceshi',
+      name: 'ceshi',
+      component: () => import('@/views/ceshi.vue')
     }
   ]
 })
