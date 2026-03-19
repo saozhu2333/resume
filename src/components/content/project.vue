@@ -1,5 +1,7 @@
 <template>
-    <div class="w-full lg:w-1/2 rounded-lg px-3 text-base font-thin">
+  <div :class="`${index==3? 'page':''}`"></div>
+    <div :class="`w-full lg:w-1/2 rounded-lg px-3 text-base font-thin`">
+      
     <!-- <div class="w-full font-medium text-xl">
       <i class="iconfont icon-hengxian fill-blue-500"></i>
       {{ props.dataTitle }}
@@ -9,7 +11,7 @@
         <!-- 页面内容 -->
         <ul>
             <li class="font-bold my-3">项目{{ index + 1 }}</li>
-            <li class="flex" v-for="(value, key) in data" :key="key">
+            <li class="flex " v-for="(value, key) in data" :key="key">
               <div class="w-28 mr-3 font-medium">{{ key }}</div>
               <div class="flex-1" v-html="value"></div>
             </li>
@@ -37,7 +39,7 @@
 });
   </script>
   
-  <style  module>
-  
+  <style  scoped>
+
   </style>
   

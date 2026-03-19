@@ -1,4 +1,5 @@
 <template>
+ 
   <div class="flex">
     <div class="w-full lg:w-1/2 h-full hidden lg:block" >
       <!-- <object class="h-40" id="marioOne" :data="MarioSVG" type="image/svg+xml"></object> -->
@@ -13,7 +14,7 @@
       class="w-full lg:w-1/2 h-full bg-gradient-to-r from-sky-500 to-indigo-500"
     >
       <div class="flex space-x-16 items-center mx-5 py-3 text-white">
-        <h1 class="text-5xl">姓名</h1>
+        <h1 class="text-5xl">王路平</h1>
         <span class="text-xl text-right">前端工程师</span>
       </div>
       <hr
@@ -21,14 +22,14 @@
         style="background-color: white; height: 2px; border: none"
       />
       <div class="flex flex-wrap">
-        <ul class="w-full lg:w-1/2 pl-5 py-3 text-white">
+        <ul class="w-1/2 Msm:w-full pl-5 py-3 text-white">
           <li>男/1999/河北衡水</li>
           <li>河北北方学院/本科/2022</li>
           <li>经验：2022.2-至今</li>
           <li>电话：15133876896</li>
           <li>邮箱：2233720980@qq.com</li>
         </ul>
-        <ul class="w-full lg:w-1/2 pl-5 py-3 text-white">
+        <ul class="w-1/2 Msm:w-full pl-5 py-3 text-white">
           <li class="hover:text-slate-300">
             <a href="https://juejin.cn/user/4330325551357245"
               ><text class="iconfont icon-juejin text-base mr-3"></text>
@@ -41,21 +42,22 @@
             >
           </li>
           <li class="hover:text-slate-300">
-            <a href=""
+            <a href="http://yaoxi.tutouguai.cn/#/"
               ><text class="iconfont icon-zuopin text-xl mr-3"></text
-              >个人作品1</a
+              >耀西休闲</a
             >
           </li>
           <li class="hover:text-slate-300">
-            <a href=""
+            <a href="http://bshtml.tutouguai.cn/"
               ><text class="iconfont icon-zuopin text-xl mr-3"></text
-              >个人作品2</a
+              >22年毕设(U:laowang,P:123456)</a
             >
           </li>
         </ul>
       </div>
     </div>
   </div>
+
 </template>
 
 <script setup lang="ts">
@@ -84,22 +86,21 @@ document.addEventListener('mousemove', function(event) {
   mario.value.style.transform=`rotateY(${(mouseX - mario.value.offsetLeft - (mario.value.offsetWidth / 2))/Xdeg}deg) rotateX(${-(mouseY - mario.value.offsetTop - (mario.value.offsetHeight / 2)) /Ydeg}deg)`;
 });
 
-const searchChild = (ele: NodeListOf<HTMLElement>)=>{
+const searchChild = (ele: NodeListOf<any>)=>{
   if(!ele.length) return 
   ele.forEach( res => {
     if(res.nodeName == 'rect'){
-      console.log(res.getTotalLength());
       res.style.stroke = res.style.fill
       res.style.fill = 'none'
       // res.getTotalLength()
       res.style.strokeWidth = '8.4666615'
-      res.style.strokeDasharray = `${res.getTotalLength()}`
+      res.style.strokeDasharray = `${res!.getTotalLength()}`
       res.style.strokeDashoffset = `${res.getTotalLength()}`
       res.style.setProperty('--l', res.getTotalLength()/4*3)
       res.style.strokeOpacity = '1'
       res.style.animation = 'stroke 2s forwards'
     }
-    if(res.childNodes.length > 0) searchChild(res.childNodes as NodeListOf<HTMLElement>)
+    if(res.childNodes.length > 0) searchChild(res.childNodes as NodeListOf<any>)
   });
 }
 </script>

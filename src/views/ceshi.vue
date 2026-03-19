@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="px-36">
     <uHeader></uHeader>
     <div class=" flex flex-wrap">
       <uContent
@@ -80,6 +80,26 @@ const projectValue = ref([
       "axios 、vue3 、ES6 、Echarts 、element plus	datav	websocket	uniapp 等",
     职责描述:
       "<div>1.	项目从 0-1 搭建 ，路由、 pinia、 axios 初始化</div><div>2.	封装部分通用组件，使用vue-i18n实现国际化</div><div>3.	使用 websocket 对大屏数据进行实时更新</div>",
+  },
+  {
+    项目名称: "智能库房管理系统 ",
+    项目时间: "2022.7-2023.8",
+    项目描述:
+      "该项目是一款基于 ruoyi 框架的一款库房管理系统 ，主要用于对库房物料进行计算以及各个仓库货架物料情况的展示。",
+    运用技术:
+      "axios 、vue 、ES6 、Echarts 、elementui 等",
+    职责描述:
+      "<div>1.  使用 echarts、制作图形化界面用来更加直观的了解库房物料数据</div><div>2.	对 elementui 中表格框架、提交修改功能进行封装</div><div>3.	使用 elementui+vue2 对 wifi 管理、集成器管理、物料管理、物料盒管理、传感器管理、等页面进行开发</div>",
+  },
+  {
+    项目名称: "安防管理平台 ",
+    项目时间: "2022.2-2023.7",
+    项目描述:
+      "该项目是一款 安防项目 ，是集接警中心、智慧安防、智慧消防、ai 智能应用、  中心值班管理、 日常安全管理、业务联动、APP 应用、大数据、系统维护等功能于一体的综合化管理平台。",
+    运用技术:
+      "HTML 、CSS 、JavaScript 、axios 、vue 、ES6 、Echarts 、elementui 等",
+    职责描述:
+      "<div>1.  对协查管理模块进行接口联调</div><div>2.	对抓拍管理模块进行开发</div><div>3.  对已经开发完成的部分模块进行维护更新</div>",
   },
 ]);
 </script>

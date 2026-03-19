@@ -7,6 +7,10 @@ export default {
     extend: {
       minHeight: {
         '800px': '800px',
+      },
+      screens: {
+        'Msm': {'max': '639px'},
+        // => @media (max-width: 639px) { ... }
       }
     },
   },
