@@ -42,15 +42,9 @@
             >
           </li>
           <li class="hover:text-slate-300">
-            <a href="http://yaoxi.tutouguai.cn/#/"
+            <a href="http://screen.tutouguai.cn/"
               ><text class="iconfont icon-zuopin text-xl mr-3"></text
-              >耀西休闲</a
-            >
-          </li>
-          <li class="hover:text-slate-300">
-            <a href="http://bshtml.tutouguai.cn/"
-              ><text class="iconfont icon-zuopin text-xl mr-3"></text
-              >22年毕设(U:laowang,P:123456)</a
+              >大屏编辑器案例(仅支持pc)</a
             >
           </li>
         </ul>
